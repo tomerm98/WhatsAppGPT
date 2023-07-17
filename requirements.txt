@@ -1,0 +1,4 @@
+openai
+whatstk
+pandas
+googletrans==3.1.0a0
