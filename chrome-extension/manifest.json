@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsAppGPT",
+  "description": "Sends your copied WhatsApp messages to ChatGPT, after compressing their token count",
+  "version": "1.0",
+  "permissions": ["tabs", "clipboardRead"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["https://chat.openai.com/*"]
+}
